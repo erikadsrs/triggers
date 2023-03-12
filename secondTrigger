@@ -1,0 +1,16 @@
+//Cenário real, com mais resgistros
+trigger AccountSecondTrigger on Account (before insert) {
+
+    //recupera a lista de registros
+    List<Account> newAccountLst = trigger.new;
+
+    //itera a lista //Objeto, variavel de iteração, lista 
+    for(Account iAccount : newAccountLst){
+        //primeira validação
+        if(iAccount.Phone == null){
+            iAccount.addError('Preencher telefone');
+        } else if (iAccount.Phone.length() < 11){
+            iAccount.addError('Favor, preencher o DDD');
+        }
+    }
+}
