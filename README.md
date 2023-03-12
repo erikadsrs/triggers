@@ -67,3 +67,7 @@ after = depois de ser incluído na base
 
 16° Post logic Process (envio de emails por exemplo)
 
+Padrão 
+Trigger chama a BO
+Trigger mapeia os eventos
+BO mapeia as regras de negócio
