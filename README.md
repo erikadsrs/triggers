@@ -36,19 +36,34 @@ before = antes de ser incluído na base
 after = depois de ser incluído na base
 
 1° Carrega o registro atual na base 
+
 2° System Validation Rules (layout)
+
 3° Triggers Before Events *
+
 4° Custom Validation Rules *
+
 5° Duplicate Rules 
+
 6° Salva o registro, MAS, não persiste (não insere totalmente)
+
 7° Triggers After Events *
+
 8° Assignments Rules (pode alterar registros, como owners etc)
+
 9° Auto-response (Web-To-Case + Template Email)
+
 10° Workflow Rules *
+
 11° Escalation Rules (Escalonamento de Casos)
+
 12° Entiltlement Rules (Direitos, Processos de Habilitação e SLA)
+
 13° Roll-up Fields (serão recalculados ou dispararão recalculagens)
+
 14° Sharing Evaluations (liberações para perfis, usuários etc)
+
 15° Persiste o dado na base
+
 16° Post logic Process (envio de emails por exemplo)
 
