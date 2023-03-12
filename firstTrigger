@@ -1,0 +1,15 @@
+//Para um único Registro, a título de treino
+trigger AccountTrigger on Account (before insert) {
+
+    //recupera a Account do contexto
+    Account newAccount = trigger.new[0];
+
+    //valida primeira situação 
+    if(newAccount.Phone == null){
+        newAccount.addError('Favor insira um Número de Telefone');
+    } else if (newAccount.Phone.length() < 11){  //valida segunda situação 
+        newAccount.addError('Favor insira um DDD válido'); //executa barramento //exibe erro
+    } else {
+        System.debug('Número inserido correto');
+    }
+}
